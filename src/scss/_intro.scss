@@ -1,0 +1,16 @@
+.introduction {
+    background: $white;
+    text-align: center;
+}
+
+.introduction h2 {
+    line-height: 35px;
+}
+
+.introContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}

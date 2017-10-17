@@ -1,0 +1,44 @@
+header {
+    background-image: url("../../assets/TOP.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+nav a {
+    padding: 40px;
+}
+
+nav li:nth-child(1):after,
+nav li:nth-child(4):after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    margin-bottom: 4px;
+}
+
+nav li:nth-child(3) {
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+nav a {
+    color: black;
+}

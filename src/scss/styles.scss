@@ -1,1 +1,21 @@
 // All Scss goes here.
+@import "_setup.scss";
+@import "_variables.scss";
+@import "_typography.scss";
+@import "_header.scss";
+@import "_intro.scss";
+@import "_grid.scss";
+@import "_twitter.scss";
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 100vh 470px 1800px 470px 535px 200px 470px 250px;
+}
+
+a {
+    text-decoration: none;
+}

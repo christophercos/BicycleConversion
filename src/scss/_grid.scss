@@ -1,0 +1,105 @@
+.photoGrid {
+    display: grid;
+    grid-template-rows: repeat(9, 200px);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.photoGrid__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 60px;
+}
+
+.photoGrid__desc--one {
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    grid-row-end: span 2;
+}
+
+.photoGrid__desc--two {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 4;
+    grid-row-end: span 2;
+}
+
+.photoGrid__desc--three {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 7;
+    grid-row-end: span 2;
+}
+
+.photoGrid__desc p {
+    font-size: 16px;
+}
+
+.photoGrid__desc svg {
+    margin-bottom: 10px;
+}
+
+.photoGrid__desc p:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: $blackTrans;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+
+.photoGrid__big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photoGrid__big--one {
+    background-image: url("../../assets/Olivia_big.png");
+    grid-column-end: span 2;
+    grid-row-end: span 3;
+}
+
+.photoGrid__big--two {
+    background-image: url("../../assets/Boriosa_big.png");
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 4;
+    grid-row-end: span 3;
+}
+
+.photoGrid__small--one {
+    background-image: url("../../assets/olivia_small.png");
+}
+
+.photoGrid__small--two {
+    background-image: url("../../assets/Boriosa_small.png");
+}
+
+.photoGrid__small--three {
+    background-image: url("../../assets/HulotMiddle.png");
+}
+
+.photoGrid__medium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photoGrid__medium--left {
+    background-image: url("../../assets/HulotLeft.png");
+    grid-row-start: 7;
+    grid-row-end: span 3;
+    grid-column-start: 1;
+    grid-column-end: span 1;
+}
+
+.photoGrid__medium--right {
+    background-image: url("../../assets/HulotRight.png");
+    grid-row-start: 7;
+    grid-row-end: span 3;
+    grid-column-start: 3;
+    grid-column-end: span 1;
+}
